@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Information Database</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Tech Information Database</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#filter">Filter</a></li>
+                <li><a href="#compare">Compare</a></li>
+                <li><a href="#ratings">Ratings</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <section id="search">
+            <h2>Search Technology</h2>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="searchTechnology()">Search</button>
+        </section>
+
+        <section id="filter">
+            <h2>Filter Technologies</h2>
+            <select id="filterOptions">
+                <option value="all">All</option>
+                <option value="software">Software</option>
+                <option value="hardware">Hardware</option>
+                <option value="networking">Networking</option>
+            </select>
+            <button onclick="filterTechnology()">Filter</button>
+        </section>
+
+        <section id="compare">
+            <h2>Compare Technologies</h2>
+            <p>Compare different technologies side by side.</p>
+            <button onclick="compareTechnology()">Compare</button>
+        </section>
+
+        <section id="ratings">
+            <h2>Technology Ratings</h2>
+            <p>Rate your favorite technologies.</p>
+            <button onclick="rateTechnology()">Rate Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tech Information Database. All rights reserved.</p>
+    </footer>
+</body>
+</html>
